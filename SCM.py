@@ -32,8 +32,21 @@ if uploaded_file is not None:
     columns_to_show = ["Place", "Surname", "Firstname", "Number", "Team", "Performance"]
 
     st.subheader("Final Women U19 10000m Walk")
-    # Convert to HTML without index
-    html_table = df2[columns_to_show].to_html(index=False)
+    
+    # Create a Styler object
+    styled = (
+        df2[columns_to_show]
+        .style
+        .hide(axis="index")  # hide the index
+        .set_table_styles(
+            [
+                {"selector": "th", "props": [("font-weight", "bold"), ("background-color", "#f2f2f2")]},
+                {"selector": "tr:nth-child(even)", "props": [("background-color", "#f9f9f9")]},
+                {"selector": "tr:nth-child(odd)", "props": [("background-color", "white")]},
+            ]
+        )
+        .set_properties(**{"text-align": "center"})  # center align text
+    )
 
-    # Display the HTML table in Streamlit
-    st.markdown(html_table, unsafe_allow_html=True)
+    # Convert to HTML and display
+    st.markdown(styled.to_html(), unsafe_allow_html=True)
