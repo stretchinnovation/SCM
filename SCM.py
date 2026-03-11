@@ -119,12 +119,11 @@ if uploaded_file is not None:
         # Render styled table
     
     # Render styled table and head string inside a RESULTS div
-    st.markdown(
+    st.html(
         f"""
-        <div id="RESULTS">
-            <div class="custom-subheader">{head}</div>
-            {styled.to_html()}
-        </div>
-        """,
-        unsafe_allow_html=True
+    <div id="RESULTS">
+        <div class="custom-subheader">{head}</div>
+        {styled.to_html()}
+    </div>
+    """
     )
