@@ -33,20 +33,38 @@ if uploaded_file is not None:
 
     st.subheader("Final Women U19 10000m Walk")
     
-    # Create a Styler object
+    # Create a Styler with transparent backgrounds
     styled = (
         df2[columns_to_show]
         .style
-        .hide(axis="index")  # hide the index
+        .hide(axis="index")  # hide index
         .set_table_styles(
             [
-                {"selector": "th", "props": [("font-weight", "bold"), ("background-color", "#00000000")]},
+                {"selector": "th", "props": [
+                    ("font-family", "Poppins"),
+                    ("font-weight", "bold"),
+                    ("background-color", "#00000000"),
+                    ("text-transform", "uppercase")
+                ]},
+                {"selector": "td", "props": [
+                    ("font-family", "Poppins"),
+                    ("text-align", "center"),
+                    ("text-transform", "uppercase"),
+                    ("background-color", "#00000000")
+                ]},
                 {"selector": "tr:nth-child(even)", "props": [("background-color", "#00000000")]},
-                {"selector": "tr:nth-child(odd)", "props": [("background-color", "#00000000")]},
+                {"selector": "tr:nth-child(odd)", "props": [("background-color", "#00000000")]}
             ]
         )
-        .set_properties(**{"text-align": "center"})  # center align text
     )
 
-    # Convert to HTML and display
+    # Load Poppins font globally
+    st.markdown(
+        """
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        """,
+        unsafe_allow_html=True
+    )
+
+    # Render styled table
     st.markdown(styled.to_html(), unsafe_allow_html=True)
