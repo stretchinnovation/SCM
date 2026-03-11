@@ -32,4 +32,8 @@ if uploaded_file is not None:
     col_to_show = ["Place", "Surname", "Firstname", "Number", "Team", "Performance"]
 
     st.subheader("Final Women U19 10000m Walk")
-    st.dataframe(df2[col_to_show].reset_index(drop=True))
+    # Convert to HTML without index
+    html_table = df2[columns_to_show].to_html(index=False)
+
+    # Display the HTML table in Streamlit
+    st.markdown(html_table, unsafe_allow_html=True)
