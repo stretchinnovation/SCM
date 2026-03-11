@@ -110,32 +110,42 @@ if files:
    
     # Create a Styler with transparent backgrounds
     styled = (
-    df2[columns_to_show]
-    .style
-    .hide(axis="index")
-    .set_table_styles(
-        [
-            {"selector": "th", "props": [
-                ("font-family", "Poppins"),
-                ("font-weight", "bold"),
-                ("background-color", "#00000000"),
-                ("text-transform", "uppercase")
-            ]},
-            {"selector": "td", "props": [
-                ("font-family", "Poppins"),
-                ("text-transform", "uppercase"),
-                ("background-color", "#00000000")
-            ]},
-            # Target specific columns by name
-            {"selector": "td.col0", "props": [("text-align", "center")]},   # Place
-            {"selector": "td.col1", "props": [("text-align", "left")]},     # Surname
-            {"selector": "td.col2", "props": [("text-align", "left")]},     # Firstname
-            {"selector": "td.col3", "props": [("text-align", "center")]},   # Number
-            {"selector": "td.col4", "props": [("text-align", "center")]},   # Team
-            {"selector": "td.col5", "props": [("text-align", "center")]},   # Performance
-        ]
+        df2[columns_to_show]
+        .style
+        .hide(axis="index")
+        .set_table_styles(
+            [
+                # Table dimensions
+                {"selector": "table", "props": [
+                    ("max-width", "1280px"),   # adjust as needed
+                    ("max-height", "240px"), # adjust as needed
+                    ("margin", "0 auto")     # center the table horizontally
+                ]},
+                # Header styling
+                {"selector": "th", "props": [
+                    ("font-family", "Poppins"),
+                    ("font-weight", "bold"),
+                    ("background-color", "#00000000"),
+                    ("text-transform", "uppercase"),
+                    ("padding", "8px 12px")  # vertical and horizontal padding
+                ]},
+                # Cell styling
+                {"selector": "td", "props": [
+                    ("font-family", "Poppins"),
+                    ("text-transform", "uppercase"),
+                    ("background-color", "#00000000"),
+                    ("padding", "6px 10px")  # vertical and horizontal padding
+                ]},
+                # Specific alignment overrides
+                {"selector": "td.col1", "props": [("text-align", "left")]},   # Surname
+                {"selector": "td.col2", "props": [("text-align", "left")]},   # Firstname
+                {"selector": "td.col0", "props": [("text-align", "center")]}, # Place
+                {"selector": "td.col3", "props": [("text-align", "center")]}, # Number
+                {"selector": "td.col4", "props": [("text-align", "center")]}, # Team
+                {"selector": "td.col5", "props": [("text-align", "center")]}, # Performance
+            ]
+        )
     )
-)
 
         # Render styled table
     
