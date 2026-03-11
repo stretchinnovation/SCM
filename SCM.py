@@ -22,7 +22,14 @@ if uploaded_file is not None:
     df1 = pd.DataFrame(data1, columns=header1)
     df2 = pd.DataFrame(data2, columns=header2)
 
-    head = "this is my header" 
+    # Example: specify the fields you want, in order
+    fields = ["Round", "Gender", "Age", "Item"]  # replace with your actual column names
+
+    # Extract values from the first row of df1 in that order
+    values = [str(df1.loc[0, field]) for field in fields]
+
+    # Concatenate into a single string
+    head = " ".join(values)
     #st.subheader("Dataset from Header Row 1")
     #st.write(df1)
 
