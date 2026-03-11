@@ -22,11 +22,16 @@ if uploaded_file is not None:
     df1 = pd.DataFrame(data1, columns=header1)
     df2 = pd.DataFrame(data2, columns=header2)
 
-    # Retrieve specific fields from df1
-   
+    # --- Build single string from df1 ---
+    # Specify the order of fields you want
+    fields_order = ["Place", "Surname", "Firstname", "Number", "Team", "Performance"]
 
-    #st.subheader("Dataset from Header Row 1")
-    st.write(df1)
+    # Concatenate values from df1 into one string
+    head = " ".join([str(df1.iloc[0][field]) for field in fields_order])
+
+    # Display the string instead of the DataFrame
+    st.subheader("Header Row 1 Data")
+    st.write(head)
 
     # Specify which columns you want to show
     columns_to_show = ["Place", "Surname", "Firstname", "Number", "Team", "Performance"]
