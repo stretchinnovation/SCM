@@ -25,14 +25,9 @@ if uploaded_file is not None:
     # Example: specify the fields you want, in order
     #fields = ["Round", "Gender", "Age", "Item"]  # replace with your actual column names
 
-    # Extract values from the first row of df1 in that order
-    #values = [str(df1.loc[0, field]) for field in fields]
-    round = df1.loc[0, "Round"]
-    gender = df1.loc[0, "Gender"]
-    age = df1.loc[0, "Age"]
-    item = df1.loc[0, "Item"]
-    # Concatenate into a single string
-    head = round+" "+gender+" "+age+" "+item
+    # Extract values from the first row of df1
+    head = f"{df1.at[0, 'Round']} {df1.at[0, 'Gender']} {df1.at[0, 'Age']} {df1.at[0, 'Item']}"
+
     #st.subheader("Dataset from Header Row 1")
     #st.write(df1)
 
