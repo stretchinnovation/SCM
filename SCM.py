@@ -24,7 +24,9 @@ if uploaded_file is not None:
 
     # --- Build single string from df1 ---
     # Specify the order of fields you want
-    fields_order = ["Place", "Surname", "Firstname", "Number", "Team", "Performance"]
+    df1.columns = df1.columns.str.strip()
+
+    fields_order = ["Round", "Gender", "Age", "Item"]
 
     # Concatenate values from df1 into one string
     head = " ".join([str(df1.iloc[0][field]) for field in fields_order])
