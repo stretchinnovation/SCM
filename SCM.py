@@ -28,5 +28,8 @@ if uploaded_file is not None:
     #st.subheader("Dataset from Header Row 1")
     st.write(df1)
 
+    # Specify which columns you want to show
+    col_to_show = ["Place", "Surname", "Firstname", "Number", "Team", "Performance"]
+
     st.subheader("Final Women U19 10000m Walk")
-    st.write(df2)
+    st.write(df2[col_to_show])
