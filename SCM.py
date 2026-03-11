@@ -117,8 +117,8 @@ if files:
             [
                 # Table dimensions
                 {"selector": "table", "props": [
-                    ("max-width", "1280px"),   # adjust as needed
-                    ("max-height", "240px"), # adjust as needed
+                    ("width", "1280px"),   # adjust as needed
+                    ("max-height", "220px"), # adjust as needed
                     ("margin", "0 auto")     # center the table horizontally
                 ]},
                 # Header styling
