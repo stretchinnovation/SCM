@@ -117,8 +117,8 @@ if files:
             [
                 # Table dimensions
                 {"selector": "table", "props": [
-                    ("max-width", "800px"),
-                    ("max-height", "400px"),
+                    ("width", "1280px"),
+                    ("max-height", "220px"),
                     ("margin", "0 auto"),
                     ("border-collapse", "collapse")  # ensure borders collapse
                 ]},
@@ -128,6 +128,7 @@ if files:
                     ("font-weight", "bold"),
                     ("background-color", "#00000000"),
                     ("text-transform", "uppercase"),
+                    ("margin", "0 auto"),
                     ("padding", "8px 12px"),
                     ("border", "none")
                 ]},
@@ -136,6 +137,7 @@ if files:
                     ("font-family", "Poppins"),
                     ("text-transform", "uppercase"),
                     ("background-color", "#00000000"),
+                    ("margin", "0 auto"),
                     ("padding", "6px 10px"),
                     ("border", "none")
                 ]},
