@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 import glob
-files = glob.glob("SCM/PICKUP/*.csv")
+files = glob.glob("PICKUP/*.csv")
 uploaded_file = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
 
 # Upload CSV file
