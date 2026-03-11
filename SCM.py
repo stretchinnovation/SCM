@@ -16,17 +16,17 @@ if uploaded_file is not None:
 
     # Extract data
     data1 = [lines[1]]   # row 2 belongs to header1
-    data2 = lines[3:]    # rows after row 3 belong to header2
+    data2 = lines[3:5]    # rows after row 3 belong to header2
 
     # Build DataFrames
     df1 = pd.DataFrame(data1, columns=header1)
     df2 = pd.DataFrame(data2, columns=header2)
 
     # Retrieve specific fields from df1
-    df1.columns = df1.columns.str.strip()
-    df1 = df1.reset_index(drop=True)
-    item = str(df1.iloc[0]["Item"])
-    st.write(item)
+    #df1.columns = df1.columns.str.strip()
+    #df1 = df1.reset_index(drop=True)
+    #item = str(df1.iloc[0]["Item"])
+    #st.write(item)
     #st.subheader("Dataset from Header Row 1")
     st.write(df1)
 
