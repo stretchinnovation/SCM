@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 
-st.title("CSV Splitter")
+#st.title("CSV Splitter")
 
 # Upload CSV file
-uploaded_file = st.file_uploader("Upload your CSV", type="csv")
+uploaded_file = st.file_uploader("", type="csv")
 
 if uploaded_file is not None:
     # Read raw lines from the uploaded file
