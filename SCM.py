@@ -30,10 +30,10 @@ if uploaded_file is not None:
     round = str(df1.iloc[0]["Round"])
     heat = str(df1.iloc[0]["Heat"])
     gender = str(df1.iloc[0]["Gender"])
-    age = str(df1.iloc[0]["Age"])
+    age = (df1.iloc[0]["Age"]
     item = str(df1.iloc[0]["Item"])
     
-    if round == "f":
+    if round == "F":
         round = "FINAL"
     else: 
         round = "HEAT "+heat
