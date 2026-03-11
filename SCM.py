@@ -29,7 +29,7 @@ if uploaded_file is not None:
     st.write(df1)
 
     # Specify which columns you want to show
-    col_to_show = ["Place", "Surname", "Firstname", "Number", "Team", "Performance"]
+    columns_to_show = ["Place", "Surname", "Firstname", "Number", "Team", "Performance"]
 
     st.subheader("Final Women U19 10000m Walk")
     # Convert to HTML without index
