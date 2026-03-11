@@ -35,12 +35,12 @@ if uploaded_file is not None:
     
     if round == "f":
         round = "FINAL"
-    else 
+    else: 
         round = "HEAT "+heat
 
     if age not in range(0-23):
         age = "SENIOR"
-    else 
+    else: 
         age = "U"+age
 
     # Now you can build your head string in any order you like
