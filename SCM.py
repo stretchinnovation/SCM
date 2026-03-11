@@ -7,7 +7,7 @@ import streamlit as st
 uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
 if uploaded_file:
     # Read the whole file as raw text
-    with open("your_file.csv", "r") as f:
+    with open(uploaded_file, "r") as f:
         lines = [line.strip().split(",") for line in f.readlines()]
 
     # Extract headers
