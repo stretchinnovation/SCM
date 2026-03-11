@@ -40,9 +40,9 @@ if uploaded_file is not None:
         .hide(axis="index")  # hide the index
         .set_table_styles(
             [
-                {"selector": "th", "props": [("font-weight", "bold"), ("background-color", "#f2f2f2")]},
-                {"selector": "tr:nth-child(even)", "props": [("background-color", "#f9f9f9")]},
-                {"selector": "tr:nth-child(odd)", "props": [("background-color", "white")]},
+                {"selector": "th", "props": [("font-weight", "bold"), ("background-color", "#00000000")]},
+                {"selector": "tr:nth-child(even)", "props": [("background-color", "#00000000")]},
+                {"selector": "tr:nth-child(odd)", "props": [("background-color", "#00000000")]},
             ]
         )
         .set_properties(**{"text-align": "center"})  # center align text
