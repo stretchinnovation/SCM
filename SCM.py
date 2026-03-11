@@ -30,7 +30,7 @@ if uploaded_file is not None:
     round = str(df1.iloc[0]["Round"])
     heat = str(df1.iloc[0]["Heat"])
     gender = str(df1.iloc[0]["Gender"])
-    age = (df1.iloc[0]["Age"])
+    age = int(df1.iloc[0]["Age"])
     item = str(df1.iloc[0]["Item"])
     
     if round == "F":
@@ -38,10 +38,24 @@ if uploaded_file is not None:
     else: 
         round = "HEAT "+heat
 
-    if age > 35:
-        age = "MASTERS"
-    elif age >23:
+    if age in range(24,30):
         age = "SENIOR"
+    elif age in range(35,40):
+        age = "MASTERS 35-39"
+    elif age in range(45,50):
+        age = "MASTERS 45-49"
+    elif age in range(55,60):
+        age = "MASTERS 55-59"
+    elif age in range(65,70):
+        age = "MASTERS 65-69"
+    elif age in range(75,80):
+        age = "MASTERS 75-79"
+    elif age in range(85,90):
+        age = "MASTERS 85-89"
+    elif age in range(95,100):
+        age = "MASTERS 95-99"
+    elif age > 99:
+        age = "MASTERS 99+"
     else: 
         age = "U"+age
 
