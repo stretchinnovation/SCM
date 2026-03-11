@@ -23,13 +23,16 @@ if uploaded_file is not None:
     df2 = pd.DataFrame(data2, columns=header2)
 
     # Example: specify the fields you want, in order
-    fields = ["Round", "Gender", "Age", "Item"]  # replace with your actual column names
+    #fields = ["Round", "Gender", "Age", "Item"]  # replace with your actual column names
 
     # Extract values from the first row of df1 in that order
-    values = [str(df1.loc[0, field]) for field in fields]
-
+    #values = [str(df1.loc[0, field]) for field in fields]
+    round = df1.at[0, "Round"]
+    gender = df1.at[0, "Gender"]
+    age = df1.at[0, "Age"]
+    item = df1.at[0, "Item"]
     # Concatenate into a single string
-    head = " ".join(values)
+    head = round+" "+gender+" "+age+" "+item
     #st.subheader("Dataset from Header Row 1")
     #st.write(df1)
 
