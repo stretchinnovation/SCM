@@ -23,12 +23,10 @@ if uploaded_file is not None:
     df2 = pd.DataFrame(data2, columns=header2)
 
     # Retrieve specific fields from df1
-    #df1.columns = df1.columns.str.strip()
-    #df1 = df1.reset_index(drop=True)
-    #item = str(df1.iloc[0]["Item"])
-    #st.write(item)
+   
+
     #st.subheader("Dataset from Header Row 1")
     st.write(df1)
 
-    st.subheader("My Item Header")
+    st.subheader("Final Women U19 10000m Walk")
     st.write(df2)
