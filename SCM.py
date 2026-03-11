@@ -117,8 +117,8 @@ if files:
             [
                 # Table dimensions
                 {"selector": "table", "props": [
-                    ("width", "1280px"),
-                    ("max-height", "220px"),
+                    ("width", "1420px"),
+                    ("max-height", "240px"),
                     ("margin", "0 auto"),
                     ("border-collapse", "collapse")  # ensure borders collapse
                 ]},
