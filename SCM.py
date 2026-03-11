@@ -152,6 +152,7 @@ if files:
                 {"selector": "td.col2", "props": [
                     ("text-align", "left"),
                     ("width", "200px")   # fixed width for Firstname
+                ]},
                 # Alignment overrides
                 {"selector": "td.col0", "props": [("text-align", "center")]}, # Place
                 {"selector": "td.col3", "props": [("text-align", "center")]}, # Number
