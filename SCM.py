@@ -27,10 +27,10 @@ if uploaded_file is not None:
 
     # Extract values from the first row of df1 in that order
     #values = [str(df1.loc[0, field]) for field in fields]
-    round = df1.at[0, "Round"]
-    gender = df1.at[0, "Gender"]
-    age = df1.at[0, "Age"]
-    item = df1.at[0, "Item"]
+    round = df1.loc[0, "Round"]
+    gender = df1.loc[0, "Gender"]
+    age = df1.loc[0, "Age"]
+    item = df1.loc[0, "Item"]
     # Concatenate into a single string
     head = round+" "+gender+" "+age+" "+item
     #st.subheader("Dataset from Header Row 1")
