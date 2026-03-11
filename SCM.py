@@ -5,7 +5,7 @@ import pandas as pd
 
 # Upload CSV file
 #uploaded_file = st.file_uploader("", type="csv")
-uploaded_file = pd.read_csv(r"C:\Users\rowan\Desktop\CSM Streamlit\*.csv")
+uploaded_file = pd.read_csv(r"C:\Users\rowan\Desktop\CSM Streamlit\pickup\*.csv")
 
 if uploaded_file is not None:
     # Read raw lines from the uploaded file
