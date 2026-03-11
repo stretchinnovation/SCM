@@ -118,13 +118,17 @@ if uploaded_file is not None:
 
         # Render styled table
     
-    # Render styled table and head string inside a RESULTS div
-    st.markdown(
-        f"""
-        <div id="RESULTS">
-            <div class="custom-subheader">{head}</div>
-            {styled.to_html()}
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    # Get query params from the URL
+    params = st.experimental_get_query_params()
+
+    # Example: only show RESULTS if ?page=results
+    if params.get("page", [""])[0] == "results":
+        st.markdown(
+            f"""
+            <div id="RESULTS">
+                <div class="custom-subheader">{head}</div>
+                {styled.to_html()}
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
