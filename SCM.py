@@ -22,14 +22,10 @@ if uploaded_file is not None:
     df1 = pd.DataFrame(data1, columns=header1)
     df2 = pd.DataFrame(data2, columns=header2)
 
-    # Example: specify the fields you want, in order
-    #fields = ["Round", "Gender", "Age", "Item"]  # replace with your actual column names
-
-    # Extract values from the first row of df1
-    head = f"{df1.at[0, 'Round']} {df1.at[0, 'Gender']} {df1.at[0, 'Age']} {df1.at[0, 'Item']}"
+    #round = df1.
 
     #st.subheader("Dataset from Header Row 1")
-    #st.write(df1)
+    st.write(df1)
 
     st.subheader(head)
     st.write(df2)
