@@ -38,7 +38,9 @@ if uploaded_file is not None:
     else: 
         round = "HEAT "+heat
 
-    if age not in range(0-23):
+    if age > 35:
+        age = "MASTERS"
+    elif age >23:
         age = "SENIOR"
     else: 
         age = "U"+age
@@ -47,7 +49,7 @@ if uploaded_file is not None:
     head = f"{round} {gender} {age} {item}"
 
     # Display the string instead of the DataFrame
-    st.subheader("Header Row 1 Data")
+    #st.subheader("Header Row 1 Data")
     st.write(head)
 
     # Specify which columns you want to show
