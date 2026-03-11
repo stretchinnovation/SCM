@@ -22,8 +22,9 @@ if uploaded_file is not None:
     df1 = pd.DataFrame(data1, columns=header1)
     df2 = pd.DataFrame(data2, columns=header2)
 
-    st.subheader("Dataset from Header Row 1")
-    st.write(df1)
+    head = "this is my header" 
+    #st.subheader("Dataset from Header Row 1")
+    #st.write(df1)
 
-    st.subheader("Dataset from Header Row 3")
+    st.subheader(head)
     st.write(df2)
