@@ -1,14 +1,12 @@
 import streamlit as st
 import pandas as pd
 
-
-#import glob
-#files = glob.glob("SCM/PICKUP/*.csv")
-#df = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
+import glob
+files = glob.glob("SCM/PICKUP/*.csv")
+uploaded_file = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
 
 # Upload CSV file
-uploaded_file = st.file_uploader("", type="csv")
-#
+#uploaded_file = st.file_uploader("", type="csv")
 
 if uploaded_file is not None:
     # Read raw lines from the uploaded file
