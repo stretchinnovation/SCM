@@ -144,9 +144,15 @@ if files:
                     ("border", "none"),
                     ("white-space", "nowrap")  # prevent wrapping in headers
                 ]},
+                # Alignment + fixed widths
+                {"selector": "td.col1", "props": [
+                    ("text-align", "left"),
+                    ("width", "200px")   # fixed width for Surname
+                ]},
+                {"selector": "td.col2", "props": [
+                    ("text-align", "left"),
+                    ("width", "200px")   # fixed width for Firstname
                 # Alignment overrides
-                {"selector": "td.col1", "props": [("text-align", "left")]},   # Surname
-                {"selector": "td.col2", "props": [("text-align", "left")]},   # Firstname
                 {"selector": "td.col0", "props": [("text-align", "center")]}, # Place
                 {"selector": "td.col3", "props": [("text-align", "center")]}, # Number
                 {"selector": "td.col4", "props": [("text-align", "center")]}, # Team
