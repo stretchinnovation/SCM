@@ -144,14 +144,18 @@ if files:
                     ("border", "none"),
                     ("white-space", "nowrap")  # prevent wrapping in headers
                 ]},
-                # Alignment + fixed widths
-                {"selector": "td.col1", "props": [
+                # Force fixed widths with !important
+                {"selector": "td.col1, th.col1", "props": [
                     ("text-align", "left"),
-                    ("width", "800px !important")   # fixed width for Surname
+                    ("min-width", "200px !important"),
+                    ("max-width", "800px !important"),
+                    ("width", "800px !important")
                 ]},
-                {"selector": "td.col2", "props": [
+                {"selector": "td.col2, th.col2", "props": [
                     ("text-align", "left"),
-                    ("width", "800px !important")   # fixed width for Firstname
+                    ("min-width", "200px !important"),
+                    ("max-width", "800px !important"),
+                    ("width", "800px !important")
                 ]},
                 # Alignment overrides
                 {"selector": "td.col0", "props": [("text-align", "center")]}, # Place
