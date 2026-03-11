@@ -117,28 +117,29 @@ if files:
             [
                 # Table dimensions
                 {"selector": "table", "props": [
-                    ("width", "1280px"),   # adjust as needed
-                    ("max-height", "220px"), # adjust as needed
-                    ("margin", "0 auto")     # center the table horizontally
+                    ("max-width", "800px"),
+                    ("max-height", "400px"),
+                    ("margin", "0 auto"),
+                    ("border-collapse", "collapse")  # ensure borders collapse
                 ]},
-                # Header styling
+                # Header styling (no borders)
                 {"selector": "th", "props": [
                     ("font-family", "Poppins"),
                     ("font-weight", "bold"),
-                    ("font-color", "#000000"),
                     ("background-color", "#00000000"),
                     ("text-transform", "uppercase"),
-                    ("padding", "8px 12px")  # vertical and horizontal padding
+                    ("padding", "8px 12px"),
+                    ("border", "none")
                 ]},
-                # Cell styling
+                # Cell styling (no borders)
                 {"selector": "td", "props": [
                     ("font-family", "Poppins"),
-                    ("font-color", "#000000"),
                     ("text-transform", "uppercase"),
                     ("background-color", "#00000000"),
-                    ("padding", "6px 10px")  # vertical and horizontal padding
+                    ("padding", "6px 10px"),
+                    ("border", "none")
                 ]},
-                # Specific alignment overrides
+                # Alignment overrides
                 {"selector": "td.col1", "props": [("text-align", "left")]},   # Surname
                 {"selector": "td.col2", "props": [("text-align", "left")]},   # Firstname
                 {"selector": "td.col0", "props": [("text-align", "center")]}, # Place
@@ -148,8 +149,6 @@ if files:
             ]
         )
     )
-
-        # Render styled table
     
     # Render styled table and head string inside a RESULTS div
     st.html(
