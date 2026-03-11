@@ -33,16 +33,16 @@ if uploaded_file is not None:
     age = str(df1.iloc[0]["Age"])
     item = str(df1.iloc[0]["Item"])
     
-    if round == "f"
+    if round == "f":
         round = "FINAL"
     else 
         round = "HEAT "+heat
 
-    if age not in range(0-23)
+    if age not in range(0-23):
         age = "SENIOR"
     else 
         age = "U"+age
-        
+
     # Now you can build your head string in any order you like
     head = f"{round} {gender} {age} {item}"
 
