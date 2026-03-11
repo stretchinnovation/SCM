@@ -85,10 +85,7 @@ if uploaded_file is not None:
         </style>
         """,
         unsafe_allow_html=True
-    )
-
-    # Use custom styled subheader
-    st.markdown(f'<div class="custom-subheader">{head}</div>', unsafe_allow_html=True)
+    ) 
     
     # Create a Styler with transparent backgrounds
     styled = (
@@ -116,4 +113,14 @@ if uploaded_file is not None:
     )
 
         # Render styled table
-    st.markdown(styled.to_html(), unsafe_allow_html=True)
+    
+    # Render styled table and head string inside a RESULTS div
+    st.markdown(
+        f"""
+        <div id="RESULTS">
+            <div class="custom-subheader">{head}</div>
+            {styled.to_html()}
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
