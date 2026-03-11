@@ -26,10 +26,25 @@ if uploaded_file is not None:
     # Specify the order of fields you want
     df1.columns = df1.columns.str.strip()
 
-    fields_order = ["Round", "Gender", "Age", "Item"]
+    # Allocate each field into its own string variable
+    round = str(df1.iloc[0]["Round"])
+    heat = str(df1.iloc[0]["Heat"])
+    gender = str(df1.iloc[0]["Gender"])
+    age = str(df1.iloc[0]["Age"])
+    item = str(df1.iloc[0]["Item"])
+    
+    if round == "f"
+        round = "FINAL"
+    else 
+        round = "HEAT "+heat
 
-    # Concatenate values from df1 into one string
-    head = " ".join([str(df1.iloc[0][field]) for field in fields_order])
+    if age not in range(0-23)
+        age = "SENIOR"
+    else 
+        age = "U"+age
+        
+    # Now you can build your head string in any order you like
+    head = f"{round} {gender} {age} {item}"
 
     # Display the string instead of the DataFrame
     st.subheader("Header Row 1 Data")
