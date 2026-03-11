@@ -147,11 +147,11 @@ if files:
                 # Alignment + fixed widths
                 {"selector": "td.col1", "props": [
                     ("text-align", "left"),
-                    ("width", "200px")   # fixed width for Surname
+                    ("width", "200px !important")   # fixed width for Surname
                 ]},
                 {"selector": "td.col2", "props": [
                     ("text-align", "left"),
-                    ("width", "200px")   # fixed width for Firstname
+                    ("width", "200px !important")   # fixed width for Firstname
                 ]},
                 # Alignment overrides
                 {"selector": "td.col0", "props": [("text-align", "center")]}, # Place
