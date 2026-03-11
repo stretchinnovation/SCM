@@ -57,7 +57,7 @@ if uploaded_file is not None:
     elif age > 99:
         age = "MASTERS 99+"
     else: 
-        age = "U"+age
+        age = "U"+str(age)
 
     # Now you can build your head string in any order you like
     head = f"{round} {gender} {age} {item}"
