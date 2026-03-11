@@ -130,7 +130,8 @@ if files:
                     ("text-transform", "uppercase"),
                     ("margin", "0 auto"),
                     ("padding", "0px 12px"),
-                    ("border", "none")
+                    ("border", "none"),
+                    ("white-space", "nowrap")  # prevent wrapping in headers
                 ]},
                 # Cell styling (no borders)
                 {"selector": "td", "props": [
@@ -139,7 +140,8 @@ if files:
                     ("background-color", "#00000000"),
                     ("margin", "0 auto"),
                     ("padding", "6px 30px"),
-                    ("border", "none")
+                    ("border", "none"),
+                    ("white-space", "nowrap")  # prevent wrapping in headers
                 ]},
                 # Alignment overrides
                 {"selector": "td.col1", "props": [("text-align", "left")]},   # Surname
