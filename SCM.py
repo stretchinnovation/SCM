@@ -97,7 +97,30 @@ if files:
         """,
         unsafe_allow_html=True
     ) 
-    
+    st.markdown(
+        """
+        <style>
+        .stApp {
+            background-color: #00000000;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    # Inject CSS to hide all elements except #RESULTS
+    st.markdown(
+        """
+        <style>
+        .stApp > * {
+            display: none;
+        }
+        #RESULTS {
+            display: block !important;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
     # Create a Styler with transparent backgrounds
     styled = (
         df2[columns_to_show]
