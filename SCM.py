@@ -28,5 +28,5 @@ if uploaded_file is not None:
     #st.subheader("Dataset from Header Row 1")
     st.write(df1)
 
-    st.subheader(head)
+    st.subheader("My Item Header")
     st.write(df2)
