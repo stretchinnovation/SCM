@@ -123,28 +123,32 @@ if files:
     )
     # Create a Styler with transparent backgrounds
     styled = (
-        df2[columns_to_show]
-        .style
-        .hide(axis="index")  # hide index
-        .set_table_styles(
-            [
-                {"selector": "th", "props": [
-                    ("font-family", "Poppins"),
-                    ("font-weight", "bold"),
-                    ("background-color", "#00000000"),
-                    ("text-transform", "uppercase")
-                ]},
-                {"selector": "td", "props": [
-                    ("font-family", "Poppins"),
-                    ("text-align", "center"),
-                    ("text-transform", "uppercase"),
-                    ("background-color", "#00000000")
-                ]},
-                {"selector": "tr:nth-child(even)", "props": [("background-color", "#00000000")]},
-                {"selector": "tr:nth-child(odd)", "props": [("background-color", "#00000000")]}
-            ]
-        )
+    df2[columns_to_show]
+    .style
+    .hide(axis="index")
+    .set_table_styles(
+        [
+            {"selector": "th", "props": [
+                ("font-family", "Poppins"),
+                ("font-weight", "bold"),
+                ("background-color", "#00000000"),
+                ("text-transform", "uppercase")
+            ]},
+            {"selector": "td", "props": [
+                ("font-family", "Poppins"),
+                ("text-transform", "uppercase"),
+                ("background-color", "#00000000")
+            ]},
+            # Target specific columns by name
+            {"selector": "td.col0", "props": [("text-align", "center")]},   # Place
+            {"selector": "td.col1", "props": [("text-align", "left")]},     # Surname
+            {"selector": "td.col2", "props": [("text-align", "left")]},     # Firstname
+            {"selector": "td.col3", "props": [("text-align", "center")]},   # Number
+            {"selector": "td.col4", "props": [("text-align", "center")]},   # Team
+            {"selector": "td.col5", "props": [("text-align", "center")]},   # Performance
+        ]
     )
+)
 
         # Render styled table
     
