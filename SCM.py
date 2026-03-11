@@ -154,12 +154,40 @@ if files:
         )
     )
     
-    # Render styled table and head string inside a RESULTS div
-    st.html(
-        f"""
-    <div id="RESULTS">
-        <div class="custom-subheader">{head}</div>
-        {styled.to_html()}
-    </div>
-    """
+    # Inject CSS for centering
+    st.markdown(
+        """
+        <style>
+        /* Center the RESULTS div in the page */
+        #RESULTS {
+            display: flex;
+            justify-content: center;   /* horizontal center */
+            align-items: center;       /* vertical center */
+            flex-direction: column;    /* stack header + table */
+            margin: 0 auto;            /* auto margins for horizontal centering */
+            text-align: center;        /* center text inside header */
+            min-height: 100vh;         /* take full viewport height */
+        }
+
+        /* Center the table inside the div */
+        #RESULTS table {
+            margin: 0 auto;            /* center table horizontally */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
     )
+
+    # Example RESULTS block
+    st.markdown(
+        """
+        <div id="RESULTS">
+            <div class="custom-subheader">FINAL WOMEN U19 10000m WALK</div>
+            <table>
+                <tr><th>Place</th><th>Surname</th><th>Firstname</th></tr>
+                <tr><td>1</td><td>DOE</td><td>JANE</td></tr>
+            </table>
+        </div>
+        """,
+        unsafe_allow_html=True
+)
