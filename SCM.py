@@ -125,6 +125,7 @@ if files:
                 {"selector": "th", "props": [
                     ("font-family", "Poppins"),
                     ("font-weight", "bold"),
+                    ("font-color", "#000000"),
                     ("background-color", "#00000000"),
                     ("text-transform", "uppercase"),
                     ("padding", "8px 12px")  # vertical and horizontal padding
@@ -132,6 +133,7 @@ if files:
                 # Cell styling
                 {"selector": "td", "props": [
                     ("font-family", "Poppins"),
+                    ("font-color", "#000000"),
                     ("text-transform", "uppercase"),
                     ("background-color", "#00000000"),
                     ("padding", "6px 10px")  # vertical and horizontal padding
