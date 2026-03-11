@@ -129,7 +129,7 @@ if files:
                     ("background-color", "#00000000"),
                     ("text-transform", "uppercase"),
                     ("margin", "0 auto"),
-                    ("padding", "0px 12px"),
+                    ("padding", "0px 0px"),
                     ("border", "none"),
                     ("white-space", "nowrap")  # prevent wrapping in headers
                 ]},
@@ -139,7 +139,7 @@ if files:
                     ("text-transform", "uppercase"),
                     ("background-color", "#00000000"),
                     ("margin", "0 auto"),
-                    ("padding", "6px 30px"),
+                    ("padding", "0px 0px"),
                     ("border", "none"),
                     ("white-space", "nowrap")  # prevent wrapping in headers
                 ]},
