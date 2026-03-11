@@ -147,15 +147,17 @@ if files:
                 # Force fixed widths with !important
                 {"selector": "td.col1, th.col1", "props": [
                     ("text-align", "left"),
-                    ("min-width", "300px !important"),
-                    ("max-width", "300px !important"),
-                    ("width", "300px !important")
+                    ("min-width", "200px !important"),
+                    ("max-width", "400px !important"),
+                    ("width", "300px !important"),
+                    ("padding", "0px 30px"),
                 ]},
                 {"selector": "td.col2, th.col2", "props": [
                     ("text-align", "left"),
-                    ("min-width", "300px !important"),
-                    ("max-width", "300px !important"),
-                    ("width", "300px !important")
+                    ("min-width", "200px !important"),
+                    ("max-width", "400px !important"),
+                    ("width", "300px !important"),
+                    ("padding", "0px 30px"),
                 ]},
                 # Alignment overrides
                 {"selector": "td.col0", "props": [("text-align", "center")]}, # Place
