@@ -16,7 +16,7 @@ if uploaded_file is not None:
 
     # Extract data
     data1 = [lines[1]]   # row 2 belongs to header1
-    data2 = lines[3:5]    # rows after row 3 belong to header2
+    data2 = lines[3:6]    # rows after row 3 belong to header2
 
     # Build DataFrames
     df1 = pd.DataFrame(data1, columns=header1)
