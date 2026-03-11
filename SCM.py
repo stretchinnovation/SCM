@@ -3,14 +3,23 @@ import pandas as pd
 
 import glob
 files = glob.glob("PICKUP/*.csv")
-uploaded_file = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
+#uploaded_file = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
+
+if files:
+    # Read raw lines from the first file
+    with open(files[0], "rb") as f:
+        lines = [line.decode("utf-8").strip().split(",") for line in f.readlines()]
+
+    # continue with your header1, header2, df1, df2 logic...
+#else:
+#    st.error("No CSV files found in SCM/PICKUP/")
 
 # Upload CSV file
 #uploaded_file = st.file_uploader("", type="csv")
 
-if uploaded_file is not None:
+#if uploaded_file is not None:
     # Read raw lines from the uploaded file
-    lines = [line.decode("utf-8").strip().split(",") for line in uploaded_file.readlines()]
+#    lines = [line.decode("utf-8").strip().split(",") for line in uploaded_file.readlines()]
 
     # Extract headers
     header1 = lines[0]   # row 1
