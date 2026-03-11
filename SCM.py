@@ -64,7 +64,7 @@ if uploaded_file is not None:
 
     # Display the string instead of the DataFrame
     #st.subheader("Header Row 1 Data")
-    st.write(head)
+    #st.write(head)
 
     # Specify which columns you want to show
     columns_to_show = ["Place", "Surname", "Firstname", "Number", "Team", "Performance"]
@@ -88,7 +88,7 @@ if uploaded_file is not None:
     )
 
     # Use custom styled subheader
-    st.markdown('<div class="custom-subheader">Final Women U19 10000m Walk</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="custom-subheader">{head}</div>', unsafe_allow_html=True)
     
     # Create a Styler with transparent backgrounds
     styled = (
