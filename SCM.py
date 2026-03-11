@@ -129,7 +129,7 @@ if files:
                     ("background-color", "#00000000"),
                     ("text-transform", "uppercase"),
                     ("margin", "0 auto"),
-                    ("padding", "8px 12px"),
+                    ("padding", "0px 12px"),
                     ("border", "none")
                 ]},
                 # Cell styling (no borders)
@@ -138,7 +138,7 @@ if files:
                     ("text-transform", "uppercase"),
                     ("background-color", "#00000000"),
                     ("margin", "0 auto"),
-                    ("padding", "6px 10px"),
+                    ("padding", "6px 30px"),
                     ("border", "none")
                 ]},
                 # Alignment overrides
