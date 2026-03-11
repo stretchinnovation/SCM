@@ -31,7 +31,26 @@ if uploaded_file is not None:
     # Specify which columns you want to show
     columns_to_show = ["Place", "Surname", "Firstname", "Number", "Team", "Performance"]
 
-    st.subheader("Final Women U19 10000m Walk")
+    # Load Poppins font globally
+    st.markdown(
+        """
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <style>
+        .custom-subheader {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # Use custom styled subheader
+    st.markdown('<div class="custom-subheader">Final Women U19 10000m Walk</div>', unsafe_allow_html=True)
     
     # Create a Styler with transparent backgrounds
     styled = (
@@ -58,13 +77,5 @@ if uploaded_file is not None:
         )
     )
 
-    # Load Poppins font globally
-    st.markdown(
-        """
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        """,
-        unsafe_allow_html=True
-    )
-
-    # Render styled table
+        # Render styled table
     st.markdown(styled.to_html(), unsafe_allow_html=True)
