@@ -101,7 +101,7 @@ if files:
         """
         <style>
         .stApp {
-            background-color: #00000000;
+            background-color: #00ff00;
         }
         </style>
         """,
@@ -127,7 +127,7 @@ if files:
                 {"selector": "th", "props": [
                     ("font-family", "Poppins"),
                     ("font-weight", "bold"),
-                    ("background-color", "#00000000"),
+                    ("background-color", "#202040"),
                     ("text-transform", "uppercase"),
                     ("margin", "0 auto"),
                     ("padding", "0px 30px"),
@@ -139,7 +139,7 @@ if files:
                 {"selector": "td", "props": [
                     ("font-family", "Poppins"),
                     ("text-transform", "uppercase"),
-                    ("background-color", "#00000000"),
+                    ("background-color", "#202040"),
                     ("margin", "0 auto"),
                     ("padding", "6px 30px"),
                     ("border", "none"),
