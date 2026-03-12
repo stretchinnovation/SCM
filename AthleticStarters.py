@@ -90,7 +90,6 @@ if files:
             font-size: 1.5em;
             font-weight: 800;
             color: #000000 !important;
-            background-image: url("SCM/KZNA StartList Title Bar.png") !important;
             padding: 6px 12px;
             #width: 100vw;
             text-transform: uppercase;
@@ -206,45 +205,13 @@ if files:
             align-items: top;       /* vertical center */
             flex-direction: column;    /* stack header + table */
             min-height: 100vh;         /* take full viewport height */
-            
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-    
-    st.markdown(
-        """
-        <style>
-        #MYDIV {
-            width: 100%;                     /* full width */
-            height: 300px;                   /* fixed height so it’s visible */
-            background-image: url("KZNA StartList Title Bar.png"); /* relative path to your repo image */
-            background-size: cover;          /* scale image to fill div */
-            background-repeat: no-repeat;    /* prevent tiling */
-            background-position: center;     /* center the image */
-            display: flex;                   /* allow centering content */
-            justify-content: center;
-            align-items: center;
-            color: white;                    /* text color for contrast */
-            font-family: 'Poppins', sans-serif;
-            font-size: 24px;
-            font-weight: bold;
         }
         </style>
         """,
         unsafe_allow_html=True
     )
 
-    # Render the div itself
-    st.markdown(
-        """
-        <div id="MYDIV">
-            This is my custom div with a background image
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    st.image("KZNA_StartList_Title_Bar.png")
 
     # Render styled table and head string inside a RESULTS div
     st.html(
