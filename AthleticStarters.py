@@ -91,7 +91,7 @@ if files:
             font-weight: 800;
             color: #000000 !important;
             #background-image: linear-gradient(135deg, #EF7C19, #FCCB27) !important;
-            background-image: url("https://scm-athletic-starters.streamlit.app/static/KZNA_StartList_Title_Bar.png") !important;
+            background-image: url("app/static/KZNA_StartList_Title_Bar.png") !important;
             padding: 6px 12px;
             #width: 100vw;
             text-transform: uppercase;
