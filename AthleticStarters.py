@@ -90,6 +90,7 @@ if files:
             font-size: 1.5em;
             font-weight: 600;
             font-color: #000000 !important;
+            background-color: #ff4500;
             text-transform: uppercase;
             margin-top: 1em;
             margin-bottom: 0.5em;
@@ -128,7 +129,7 @@ if files:
                 {"selector": "th", "props": [
                     ("font-family", "Poppins"),
                     ("font-weight", "bold"),
-                    ("background-color", "#202040"),
+                    ("background-color", "#101020"),
                     ("text-transform", "uppercase"),
                     ("margin", "0 auto"),
                     ("padding", "0px 30px"),
@@ -140,7 +141,7 @@ if files:
                 {"selector": "td", "props": [
                     ("font-family", "Poppins"),
                     ("text-transform", "uppercase"),
-                    ("background-color", "#202040"),
+                    ("background-color", "#101020"),
                     ("margin", "0 auto"),
                     ("padding", "6px 30px"),
                     #("border", "none"),
