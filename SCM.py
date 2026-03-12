@@ -146,17 +146,13 @@ if files:
                 ]},
                 # Force fixed widths with !important
                 {"selector": "td.col0, th.col0", "props": [
-                    ("text-align", "left"),
-                    ("min-width", "60px !important"),
-                    ("max-width", "60px !important"),
-                    ("width", "60px !important"),
+                    ("text-align", "center"),
+                    ("width", "100px !important"),
                     ("padding", "0px 30px"),
                 ]},
                 {"selector": "td.col1, th.col1", "props": [
                     ("text-align", "left"),
-                    ("min-width", "60px !important"),
-                    ("max-width", "60px !important"),
-                    ("width", "60px !important"),
+                    ("width", "auto"),
                     ("padding", "0px 30px"),
                 ]},
                 {"selector": "td.col2, th.col2", "props": [
@@ -165,22 +161,21 @@ if files:
                     ("padding", "0px 30px"),
                 ]},
                 {"selector": "td.col3, th.col3", "props": [
-                    ("text-align", "left"),
-                    ("width", "auto"),
+                    ("text-align", "center"),
+                    ("text-align", "center"),
+                    ("width", "100px !important"),
                     ("padding", "0px 30px"),
                 ]},
                 {"selector": "td.col4, th.col4", "props": [
-                    ("text-align", "left"),
-                    ("min-width", "60px !important"),
-                    ("max-width", "60px !important"),
-                    ("width", "60px !important"),
+                    ("text-align", "center"),
+                    ("text-align", "center"),
+                    ("width", "100px !important"),
                     ("padding", "0px 30px"),
                 ]},
                 {"selector": "td.col5, th.col5", "props": [
-                    ("text-align", "left"),
-                    ("min-width", "60px !important"),
-                    ("max-width", "60px !important"),
-                    ("width", "60px !important"),
+                    ("text-align", "center"),
+                    ("text-align", "center"),
+                    ("width", "100px !important"),
                     ("padding", "0px 30px"),
                 ]},
                 # Alignment overrides
