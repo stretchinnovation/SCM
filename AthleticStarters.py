@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 import glob
-files = glob.glob("PICKUP/*.csv")
+files = glob.glob("PICKUP/StartersData.csv")
 #uploaded_file = pd.concat([pd.read_csv(f) for f in files], ignore_index=True)
 
 if files:
@@ -27,7 +27,7 @@ if files:
 
     # Extract data
     data1 = [lines[1]]   # row 2 belongs to header1
-    data2 = lines[3:6]    # rows after row 3 belong to header2
+    data2 = lines[3:]    # rows after row 3 belong to header2
 
     # Build DataFrames
     df1 = pd.DataFrame(data1, columns=header1)
@@ -78,7 +78,7 @@ if files:
     #st.write(head)
 
     # Specify which columns you want to show
-    columns_to_show = ["Place", "Surname", "Firstname", "Number", "Team", "Performance"]
+    columns_to_show = ["Lane", "Surname", "Firstname", "Number", "Team"]
 
     # Load Poppins font globally
     st.markdown(
@@ -174,17 +174,17 @@ if files:
                     ("width", "100px !important"),
                     ("padding", "0px 30px"),
                 ]},
-                {"selector": "td.col5, th.col5", "props": [
-                    ("text-align", "center"),
-                    ("text-align", "center"),
-                    ("width", "100px !important"),
-                    ("padding", "0px 30px"),
-                ]},
+                #{"selector": "td.col5, th.col5", "props": [
+                #    ("text-align", "center"),
+                #    ("text-align", "center"),
+                #    ("width", "100px !important"),
+                #    ("padding", "0px 30px"),
+                #]},
                 # Alignment overrides
                 {"selector": "td.col0", "props": [("text-align", "center")]}, # Place
                 {"selector": "td.col3", "props": [("text-align", "center")]}, # Number
                 {"selector": "td.col4", "props": [("text-align", "center")]}, # Team
-                {"selector": "td.col5", "props": [("text-align", "center")]}, # Performance
+                #{"selector": "td.col5", "props": [("text-align", "center")]}, # Performance
             ]
         )
     )
