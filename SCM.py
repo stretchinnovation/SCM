@@ -145,18 +145,32 @@ if files:
                     ("white-space", "nowrap")  # prevent wrapping in headers
                 ]},
                 # Force fixed widths with !important
-                {"selector": "td.col1, th.col1", "props": [
+                {"selector": "td.col0, th.col0", "props": [
                     ("text-align", "left"),
-                    ("min-width", "200px !important"),
-                    ("max-width", "400px !important"),
-                    ("width", "300px !important"),
+                    ("min-width", "40px !important"),
+                    ("max-width", "40px !important"),
+                    ("width", "40px !important"),
                     ("padding", "0px 30px"),
                 ]},
-                {"selector": "td.col2, th.col2", "props": [
+                {"selector": "td.col3, th.col3", "props": [
                     ("text-align", "left"),
-                    ("min-width", "200px !important"),
-                    ("max-width", "400px !important"),
-                    ("width", "300px !important"),
+                    ("min-width", "40px !important"),
+                    ("max-width", "40px !important"),
+                    ("width", "40px !important"),
+                    ("padding", "0px 30px"),
+                ]},
+                {"selector": "td.col4, th.col4", "props": [
+                    ("text-align", "left"),
+                    ("min-width", "40px !important"),
+                    ("max-width", "40px !important"),
+                    ("width", "40px !important"),
+                    ("padding", "0px 30px"),
+                ]},
+                {"selector": "td.col5, th.col5", "props": [
+                    ("text-align", "left"),
+                    ("min-width", "40px !important"),
+                    ("max-width", "40px !important"),
+                    ("width", "40px !important"),
                     ("padding", "0px 30px"),
                 ]},
                 # Alignment overrides
