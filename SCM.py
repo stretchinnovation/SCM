@@ -200,7 +200,6 @@ if files:
             flex-direction: column;    /* stack header + table */
             min-height: 100vh;         /* take full viewport height */
         }
-        
         </style>
         """,
         unsafe_allow_html=True
