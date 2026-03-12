@@ -90,7 +90,7 @@ if files:
             font-size: 1.5em;
             font-weight: 800;
             color: #000000 !important;
-            background-color: #ff8000;
+            background-image: linear-gradient(to right, #EF7C19 , #FCCB27);
             padding: 6px 12px;
             width: 100vw;
             text-transform: uppercase;
@@ -125,7 +125,7 @@ if files:
                 {"selector": "table", "props": [
                     ("width", "100vw"),
                     ("max-height", "240px"),
-                    ("margin", "0"),
+                    ("margin", "0px"),
                     ("padding", "0px 0px"),
                     ("border-collapse", "collapse")  # ensure borders collapse
                 ]},
@@ -133,21 +133,22 @@ if files:
                 {"selector": "th", "props": [
                     ("font-family", "Poppins"),
                     ("font-weight", "bold"),
-                    ("background-color", "#101020"),
+                    ("color", "#ffffff"),
+                    ("background-image", "linear-gradient(135deg, #E5007E,#E5007E,#E5007E,#E5007E,#E5007E,#b00466,#7a084f, #101020) !important"),
                     ("text-transform", "uppercase"),
-                    ("margin", "0"),
-                    ("padding", "0px 30px"),
+                    ("margin", "0px"),
+                    ("padding", "0px 0px"),
                     ("border", "none"),
                     ("font-size", "18px"),
                     ("white-space", "nowrap")  # prevent wrapping in headers
                 ]},
-                # Cell styling (no borders)
+                # Cell styling
                 {"selector": "td", "props": [
                     ("font-family", "Poppins"),
                     ("text-transform", "uppercase"),
-                    ("background-color", "#101020"),
-                    ("margin", "0"),
-                    ("padding", "6px 10px"),
+                    ("background-image", "linear-gradient(150deg, #101020,#101020,#101020, #303060) !important"),
+                    ("margin", "0px"),
+                    ("padding", "0px 0px"),
                     #("border", "none"),
                     ("font-size", "18px"),
                     ("white-space", "nowrap")  # prevent wrapping in headers
@@ -205,6 +206,7 @@ if files:
             align-items: top;       /* vertical center */
             flex-direction: column;    /* stack header + table */
             min-height: 100vh;         /* take full viewport height */
+            width: 100vw;
         }
         </style>
         """,
