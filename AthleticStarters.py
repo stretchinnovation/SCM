@@ -193,7 +193,7 @@ if files:
         """
         <style>
         /* Center the RESULTS div in the page */
-        #RESULTS {
+        #STARTERS {
             display: flex;
             justify-content: left;   /* horizontal center */
             align-items: top;       /* vertical center */
@@ -208,7 +208,7 @@ if files:
     # Render styled table and head string inside a RESULTS div
     st.html(
         f"""
-    <div id="RESULTS">
+    <div id="STARTERS">
         <div class="custom-subheader">{head}</div>
         {styled.to_html()}
     </div>
