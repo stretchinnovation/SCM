@@ -122,7 +122,7 @@ if files:
                     ("max-height", "240px"),
                     ("margin", "0 auto"),
                     ("padding", "0px 0px"),
-                    ("border-collapse", "collapse")  # ensure borders collapse
+                    #("border-collapse", "collapse")  # ensure borders collapse
                 ]},
                 # Header styling (no borders)
                 {"selector": "th", "props": [
@@ -132,7 +132,7 @@ if files:
                     ("text-transform", "uppercase"),
                     ("margin", "0 auto"),
                     ("padding", "0px 30px"),
-                    ("border", "none"),
+                    #("border", "none"),
                     ("font-size", "18px"),
                     ("white-space", "nowrap")  # prevent wrapping in headers
                 ]},
@@ -143,7 +143,7 @@ if files:
                     ("background-color", "#202040"),
                     ("margin", "0 auto"),
                     ("padding", "6px 30px"),
-                    ("border", "none"),
+                    #("border", "none"),
                     ("font-size", "18px"),
                     ("white-space", "nowrap")  # prevent wrapping in headers
                 ]},
