@@ -91,7 +91,7 @@ if files:
             font-weight: 800;
             color: #000000 !important;
             #background-image: linear-gradient(135deg, #EF7C19, #FCCB27) !important;
-            background-image: url("KZNA_StartList_Title_Bar.png") !important;
+            background-image: url(https://github.com/stretchinnovation/SCM/blob/b14cf4a7c1c49136ba0741afff6ac00920ec192c/KZNA_StartList_Title_Bar.png) !important;
             padding: 6px 12px;
             #width: 100vw;
             text-transform: uppercase;
