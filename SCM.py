@@ -117,7 +117,7 @@ if files:
             [
                 # Table dimensions
                 {"selector": "table", "props": [
-                    ("width", "1420px"),
+                    ("width", "100vw"),
                     ("max-height", "240px"),
                     ("margin", "0 auto"),
                     ("padding", "0px 0px"),
@@ -132,6 +132,7 @@ if files:
                     ("margin", "0 auto"),
                     ("padding", "0px 30px"),
                     ("border", "none"),
+                    ("font-size", "18px"),
                     ("white-space", "nowrap")  # prevent wrapping in headers
                 ]},
                 # Cell styling (no borders)
@@ -142,6 +143,7 @@ if files:
                     ("margin", "0 auto"),
                     ("padding", "6px 30px"),
                     ("border", "none"),
+                    ("font-size", "18px"),
                     ("white-space", "nowrap")  # prevent wrapping in headers
                 ]},
                 # Force fixed widths with !important
