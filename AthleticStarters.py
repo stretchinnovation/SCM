@@ -90,9 +90,9 @@ if files:
             font-size: 1.5em;
             font-weight: 800;
             color: #000000 !important;
-            background-image: linear-gradient(to right, #EF7C19 , #FCCB27);
+            background-image: url("KZNA StartList Title Bar.png");
             padding: 6px 12px;
-            width: 100vw;
+            #width: 100vw;
             text-transform: uppercase;
             margin-top: 0em;
             margin-bottom: 0em;
@@ -206,7 +206,7 @@ if files:
             align-items: top;       /* vertical center */
             flex-direction: column;    /* stack header + table */
             min-height: 100vh;         /* take full viewport height */
-            width: 100vw;
+            
         }
         </style>
         """,
