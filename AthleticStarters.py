@@ -90,6 +90,7 @@ if files:
             font-size: 1.5em;
             font-weight: 800;
             color: #000000 !important;
+            background-image: linear-gradient(135deg, #EF7C19, #FCCB27) !important;
             padding: 6px 12px;
             #width: 100vw;
             text-transform: uppercase;
@@ -210,8 +211,6 @@ if files:
         """,
         unsafe_allow_html=True
     )
-
-    st.image("KZNA_StartList_Title_Bar.png")
 
     # Render styled table and head string inside a RESULTS div
     st.html(
