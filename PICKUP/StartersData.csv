@@ -3,7 +3,7 @@ Seq,Item,Gender,Age,Round,Heat,Time,Wind
 Lane,Surname,Firstname,Number,Team,,,
 1,MJOLI,ANELISIWE,670,CAH,,,
 2,MZIMBA,AMAHLE,946,ACE,,,
-3,OlIVIA,TRIVAGO,946,DDC,,,
+3,OlIVIA,TRIVAGO,501,DDC,,,
 4,Olusola,Wanjiku,337,CDE,,,
 5,Campbell,Winterveld,288,CCE,,,
 6,Jillian,Keen,448,FIC,,,
@@ -26,4 +26,5 @@ Lane,Surname,Firstname,Number,Team,,,
 23,Mandlenkosi,Cokes,583,HAH,,,
 24,Josceline,Jordan,652,GAH,,,
 25,Nomusa,Gibbs,703,HAB,,,
+
 
