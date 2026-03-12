@@ -147,7 +147,7 @@ if files:
                 # Force fixed widths with !important
                 {"selector": "td.col0, th.col0", "props": [
                     ("text-align", "center"),
-                    ("width", "100px !important"),
+                    ("width", "60px !important"),
                     ("padding", "0px 30px"),
                 ]},
                 {"selector": "td.col1, th.col1", "props": [
@@ -185,6 +185,23 @@ if files:
                 {"selector": "td.col5", "props": [("text-align", "center")]}, # Performance
             ]
         )
+    )
+    # Inject CSS for centering
+    st.markdown(
+        """
+        <style>
+        /* Center the RESULTS div in the page */
+        #RESULTS {
+            display: flex;
+            justify-content: left;   /* horizontal center */
+            align-items: top;       /* vertical center */
+            flex-direction: column;    /* stack header + table */
+            min-height: 100vh;         /* take full viewport height */
+        }
+        
+        </style>
+        """,
+        unsafe_allow_html=True
     )
     
     # Render styled table and head string inside a RESULTS div
