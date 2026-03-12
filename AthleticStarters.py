@@ -89,7 +89,7 @@ if files:
             font-family: 'Poppins', sans-serif;
             font-size: 1.5em;
             font-weight: 600;
-            front-color: #000000 !important;
+            font-color: #000000 !important;
             text-transform: uppercase;
             margin-top: 1em;
             margin-bottom: 0.5em;
