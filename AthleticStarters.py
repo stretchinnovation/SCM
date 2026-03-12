@@ -88,12 +88,16 @@ if files:
         .custom-subheader {
             font-family: 'Poppins', sans-serif;
             font-size: 1.5em;
-            font-weight: 600;
-            font-color: #000000 !important;
-            background-color: #ff4500;
+            font-weight: 800;
+            color: #000000 !important;
+            background-color: #ff8000;
+            padding: 6px 12px;
+            width: 100vw;
             text-transform: uppercase;
-            margin-top: 1em;
-            margin-bottom: 0.5em;
+            margin-top: 0em;
+            margin-bottom: 0em;
+            margin-left: 2px;
+            margin-right: 2px;
         }
         </style>
         """,
@@ -121,19 +125,19 @@ if files:
                 {"selector": "table", "props": [
                     ("width", "100vw"),
                     ("max-height", "240px"),
-                    ("margin", "0 auto"),
+                    ("margin", "0"),
                     ("padding", "0px 0px"),
-                    #("border-collapse", "collapse")  # ensure borders collapse
+                    ("border-collapse", "collapse")  # ensure borders collapse
                 ]},
-                # Header styling (no borders)
+                # Header styling 
                 {"selector": "th", "props": [
                     ("font-family", "Poppins"),
                     ("font-weight", "bold"),
                     ("background-color", "#101020"),
                     ("text-transform", "uppercase"),
-                    ("margin", "0 auto"),
+                    ("margin", "0"),
                     ("padding", "0px 30px"),
-                    #("border", "none"),
+                    ("border", "none"),
                     ("font-size", "18px"),
                     ("white-space", "nowrap")  # prevent wrapping in headers
                 ]},
@@ -142,8 +146,8 @@ if files:
                     ("font-family", "Poppins"),
                     ("text-transform", "uppercase"),
                     ("background-color", "#101020"),
-                    ("margin", "0 auto"),
-                    ("padding", "6px 30px"),
+                    ("margin", "0"),
+                    ("padding", "6px 10px"),
                     #("border", "none"),
                     ("font-size", "18px"),
                     ("white-space", "nowrap")  # prevent wrapping in headers
