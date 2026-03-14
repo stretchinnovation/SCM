@@ -79,7 +79,19 @@ if files:
 
     # Specify which columns you want to show
     match item:
+        case i if "90m" in i:
+            columns_to_show = ["Lane", "Surname", "Firstname", "Number", "Team"]
         case i if "100m" in i:
+            columns_to_show = ["Lane", "Surname", "Firstname", "Number", "Team"]
+        case i if "110m" in i:
+            columns_to_show = ["Lane", "Surname", "Firstname", "Number", "Team"]
+        case i if "200m" in i:
+            columns_to_show = ["Lane", "Surname", "Firstname", "Number", "Team"]
+        case i if "400m" in i:
+            columns_to_show = ["Lane", "Surname", "Firstname", "Number", "Team"]
+        case i if "800m" in i:
+            columns_to_show = ["Lane", "Surname", "Firstname", "Number", "Team"]
+        case i if "relay" in i:
             columns_to_show = ["Lane", "Surname", "Firstname", "Number", "Team"]
         case _:
             columns_to_show = ["Surname", "Firstname", "Number", "Team"]
