@@ -78,7 +78,11 @@ if files:
     #st.write(head)
 
     # Specify which columns you want to show
-    columns_to_show = ["Lane", "Surname", "Firstname", "Number", "Team"]
+    match item.upper():
+        case "100m" in item.upper():
+            columns_to_show = ["Lane", "Surname", "Firstname", "Number", "Team"]
+        case _:
+            columns_to_show = ["Surname", "Firstname", "Number", "Team"]
 
     # Load Poppins font globally
     st.markdown(
