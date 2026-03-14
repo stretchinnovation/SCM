@@ -78,8 +78,8 @@ if files:
     #st.write(head)
 
     # Specify which columns you want to show
-    match item.upper():
-        case "100m" in item.upper():
+    match item:
+        case i if "100m" in i:
             columns_to_show = ["Lane", "Surname", "Firstname", "Number", "Team"]
         case _:
             columns_to_show = ["Surname", "Firstname", "Number", "Team"]
